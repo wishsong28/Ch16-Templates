@@ -3,7 +3,7 @@
 //Ch16 Templates - Programming Assignment #15b
 //12.07.2025
 
-//This program demonstrates the use of function templates by accepting a numerical values and returning the value halved.
+//This program demonstrates the use of function templates by accepting numerical values and returning the value halved.
 
 #include <iostream>
 #include <cmath>
@@ -29,6 +29,9 @@ int main()
 	return 0;
 }
 
+//*******************************************************
+//Definition of half function used by int values only	*
+//*******************************************************
 int half<int>(int value)
 {
 	return static_cast<int>(round(value / 2.0));
